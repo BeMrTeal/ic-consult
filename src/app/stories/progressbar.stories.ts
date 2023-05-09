@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/angular';
+import { StoryFn, Meta } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -19,7 +19,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ProgressBarComponent> = (args: ProgressBarComponent) => ({
+const Template: StoryFn<ProgressBarComponent> = (args: ProgressBarComponent) => ({
   props: args,
 });
 

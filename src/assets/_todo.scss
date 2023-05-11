@@ -26,7 +26,7 @@
   }
 }
 
-.todo__footer {
+.todo__footer, .todo__actions  {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -39,12 +39,11 @@
   }
 }
 
-.todo__completed {
-  width: calc(24px * 4);
-  height: calc(24px * 4);
-  margin-top: calc(24px * -1);
-  margin-right: calc(24px * -1);
-  background-color: rgb(167, 4, 0);
+.todo__completed, .todo__delete {
+  width: 24px;
+  height: 24px;
+  margin-top: 24px;
+  margin-right: 24px;
   border-end-start-radius: 4px;
   border-start-end-radius: 4px;
   display: flex;
@@ -56,6 +55,16 @@
 
   &--true {
     background-color: rgb(91, 142, 9);
-    color: $color-text-default;
+    color: rgb(91, 142, 9);
   }
 }
+
+.todo__delete {
+  color: rgb(220, 53, 69);
+}
+
+.btn {
+  background-color: inherit;
+  border: none;
+}
+
